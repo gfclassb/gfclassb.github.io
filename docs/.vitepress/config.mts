@@ -37,7 +37,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '📷照册集',
-        collapsed: false,
+        //collapsed: false,
         item: [
           {
             text: '高一',
