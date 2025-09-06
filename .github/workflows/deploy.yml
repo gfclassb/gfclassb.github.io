@@ -47,6 +47,9 @@ jobs:
         run: npm ci # 或 pnpm install / yarn install / bun install
       - name: Install Add-ons
         run: npm install vitepress-markdown-timeline
+        run: npm install medium-zoom
+        run: npm i -D vitepress-sidebar
+        run: npm install vitepress-plugin-comment-with-giscus
       - name: Build with VitePress
         run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
