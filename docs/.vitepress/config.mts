@@ -56,7 +56,7 @@ export default defineConfig({
           {
             text:'高三',
             collapsed: true,
-          
+          },
         ],
       },
     ],
