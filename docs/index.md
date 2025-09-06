@@ -26,7 +26,7 @@ layout: home
 1. 使用[Markdown](https://markdown.com.cn/basic-syntax/)格式编写一篇文档文件(后缀名为.md)
 2. 通过班级群/网盘链接发送给我(qq,vx都可以)
 
-## 🗂️ 全站索引（按类别）
+## 🗂️ 更新情况（按类别）
 
 ::: tip 提示
 使用 `Ctrl + K` 或页面右侧目录快速查找你需要的文档；
