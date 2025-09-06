@@ -37,12 +37,12 @@ export default defineConfig({
     sidebar: [
       {
         text: '📷照册集',
-        //collapsed: false,
-        item: [
+        collapsed: true,
+        items: [
           {
             text: '高一',
-            //collapsed: false,
-            item: [
+            collapsed: true,
+            items: [
               {
                 text: '军训',
                 link: './photos/g1mt.md'
@@ -51,11 +51,11 @@ export default defineConfig({
           },
           {
             text:'高二',
-            //collapsed: false,
+            collapsed: true,
           },
           {
             text:'高三',
-            //collapsed: false,
+            collapsed: true,
           },
         ],
       },
