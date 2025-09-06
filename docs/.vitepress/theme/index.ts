@@ -28,7 +28,6 @@ export default {
     
     // Get frontmatter and route
     const { frontmatter } = useData();
-    const route = useRoute();
         
     // giscus配置
     giscusTalk({
