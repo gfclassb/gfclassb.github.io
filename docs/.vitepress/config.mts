@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
+import timeline from "vitepress-markdown-timeline
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,7 +13,14 @@ export default defineConfig({
     theme: {
       dark: 'dracula-soft',
       light: 'github-dark',
-    }
+    },
+     //行号显示
+    lineNumbers: true, 
+
+    //时间线
+    config: (md) => {
+      md.use(timeline);
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
