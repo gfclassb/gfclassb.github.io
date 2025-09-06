@@ -1,28 +1,35 @@
 import { defineConfig } from 'vitepress'
+import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "GDFZ Class B 综合数据库",
+  title: "GFCB Database",
   description: "广大附中2025级B班综合数据库。",
+  vite: {
+    plugins: [pagefindPlugin()],
+  },
+  markdown: {
+    theme: {
+      dark: 'dracula-soft',
+      light: 'github-dark',
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '目录', link: '/contents' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        text: '啥都木有',
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/gfclassb/gfclassb.github.io#' },
+      { icon: 'mail', link: 'mailto: 3481522072@qq.com' }
     ]
   }
 })
