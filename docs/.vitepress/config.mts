@@ -41,7 +41,7 @@ export default defineConfig({
         item: [
           {
             text: '高一',
-            collapsed: true,
+            collapsed: false,
             item: [
               {
                 text: '军训',
@@ -51,11 +51,11 @@ export default defineConfig({
           },
           {
             text:'高二',
-            collapsed: true,
+            collapsed: false,
           },
           {
             text:'高三',
-            collapsed: true,
+            collapsed: false,
           },
         ],
       },
