@@ -26,8 +26,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '目录', link: '/contents' },
-      { text: '时间线', link: '/contents' }
+      { text: '目录', link: '/contents.md' },
+      { text: '时间线', link: '/timeline.md' }
     ],
 
     sidebar: [
