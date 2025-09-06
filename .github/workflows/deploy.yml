@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: npm ci # 或 pnpm install / yarn install / bun install
       - name: Install Add-ons
-        run:| 
+        run: | 
           npm install vitepress-markdown-timeline
           npm install medium-zoom
           npm i -D vitepress-sidebar
