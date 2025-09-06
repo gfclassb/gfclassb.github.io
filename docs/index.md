@@ -24,7 +24,7 @@ layout: home
 
 1. 使用[Markdown](https://markdown.com.cn/basic-syntax/)格式编写一篇文档文件(后缀名为.md)
 2. 通过班级群/网盘链接发送给我(qq,vx都可以)
-3. 直接修改Github仓库（见[高级编写指南](adv_info)。
+3. 直接修改Github仓库（见[高级编写指南](./adv_info.md)。
 
 ## 🗂️ 全站索引（按类别）
 
