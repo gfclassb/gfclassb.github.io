@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import timeline from "vitepress-markdown-timeline"
+import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,6 +14,9 @@ export default defineConfig({
     theme: {
       dark: 'dracula-soft',
       light: 'github-dark',
+    },
+    config: (md) => {
+      md.use(markdownItTaskCheckbox) //todo
     },
      //行号显示
     lineNumbers: true, 
