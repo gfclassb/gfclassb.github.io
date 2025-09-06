@@ -27,6 +27,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '目录', link: '/contents' }
+      { text: '时间线', link: '/timeline' }
     ],
 
     sidebar: [
