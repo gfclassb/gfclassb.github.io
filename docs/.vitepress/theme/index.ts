@@ -4,6 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 import './style.css'
+import mediumZoom from 'medium-zoom';
+import { onMounted, watch, nextTick } from 'vue';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 
@@ -11,6 +13,19 @@ import { useData, useRoute } from 'vitepress';
 export default {
   extends: DefaultTheme,
   setup() {
+    const route = useRoute();
+    const initZoom = () => {
+      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    );
+    
     // Get frontmatter and route
     const { frontmatter } = useData();
     const route = useRoute();
