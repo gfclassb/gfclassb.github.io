@@ -36,8 +36,29 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '啥都木有',
-      }
+        text: '📷照册集',
+        collapsed: false,
+        item: [
+          {
+            text: '高一',
+            collapsed: true,
+            item: [
+              {
+                text: '军训',
+                link: './photos/g1mt.md'
+              },
+            ],
+          },
+          {
+            text:'高二',
+            collapsed: true,
+          },
+          {
+            text:'高三',
+            collapsed: true,
+          
+        ],
+      },
     ],
 
     socialLinks: [
