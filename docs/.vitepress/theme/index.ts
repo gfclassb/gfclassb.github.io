@@ -33,7 +33,7 @@ export default {
       //您可以使用“comment:true”序言在页面上单独启用它
       true
     )
-  }}
+  }
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
