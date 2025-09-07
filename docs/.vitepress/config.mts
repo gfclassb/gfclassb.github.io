@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import timeline from "vitepress-markdown-timeline"
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
-import { nav } from './configs/index.ts'
-import { sidebar } from './configs/index.ts'
+import { nav } from './configs'
+import { sidebar } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
