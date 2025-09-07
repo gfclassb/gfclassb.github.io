@@ -1,0 +1,32 @@
+/* .vitepress/theme/style/animations.css */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes golden-shine {
+  0% {
+    background-size: 200% 200%;
+    filter: brightness(1);
+  }
+  50% {
+    background-size: 220% 220%;
+    filter: brightness(1.1);
+  }
+  100% {
+    background-size: 200% 200%;
+    filter: brightness(1);
+  }
+}
+
+.h1-gradient {
+  animation: gradient-shift var(--gradient-animation-duration) var(--gradient-animation-timing) infinite, 
+             golden-shine 6s ease-in-out infinite;
+}
