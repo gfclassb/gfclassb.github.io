@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import timeline from "vitepress-markdown-timeline"
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
+import { nav } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,12 +29,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '目录', link: '/contents.md' },
-      { text: '时间线', link: '/timeline.md' }
-    ],
-
+    nav,
     sidebar: [
       {
         text: '📷照册集',
