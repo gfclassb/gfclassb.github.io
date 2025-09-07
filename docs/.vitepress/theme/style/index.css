@@ -4,3 +4,48 @@
 @import './blur.css';
 @import './marker.css';
 @import './sidebarIcon.css';
+
+/* .vitepress/theme/style/index.css */
+:root {
+  /* 导入变量定义 */
+  @import 'var.css';
+  @import 'animations.css';
+}
+
+/* 基础h1样式 */
+.vp-doc h1,
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  background: linear-gradient(var(--gradient-angle), var(--gradient-red), var(--gradient-gold));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  min-width: 50%;
+}
+
+/* 应用动画效果 */
+.vp-doc h1,
+h1 {
+  composes: h1-gradient;
+}
+
+/* 深色模式下的调整 */
+.dark .vp-doc h1,
+.dark h1 {
+  background: linear-gradient(var(--gradient-angle), var(--gradient-red), var(--gradient-gold));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* 响应式设计：移动端适配 */
+@media (max-width: 768px) {
+  .vp-doc h1,
+  h1 {
+    --h1-font-size: 2rem;
+    background-size: 150% 150%;
+  }
+}
