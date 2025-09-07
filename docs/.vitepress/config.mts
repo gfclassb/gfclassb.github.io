@@ -3,6 +3,7 @@ import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import timeline from "vitepress-markdown-timeline"
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import { nav } from './configs'
+import { sidebar } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -30,32 +31,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav,
-    sidebar: [
-      {
-        text: '📷照册集',
-        collapsed: true,
-        items: [
-          {
-            text: '高一',
-            collapsed: true,
-            items: [
-              {
-                text: '军训',
-                link: './photos/g1mt.md'
-              },
-            ],
-          },
-          {
-            text:'高二',
-            collapsed: true,
-          },
-          {
-            text:'高三',
-            collapsed: true,
-          },
-        ],
-      },
-    ],
+    sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gfclassb/gfclassb.github.io#' },
