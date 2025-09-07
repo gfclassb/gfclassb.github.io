@@ -17,15 +17,13 @@ export default defineConfig({
       dark: 'dracula-soft',
       light: 'github-dark',
     },
-    config: (md) => {
-      md.use(markdownItTaskCheckbox) //todo
-    },
      //行号显示
     lineNumbers: true, 
 
     //时间线
     config: (md) => {
       md.use(timeline);
+      md.use(markdownItTaskCheckbox) //todo
     },
   },
   themeConfig: {
