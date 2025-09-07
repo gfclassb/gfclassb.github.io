@@ -1,5 +1,33 @@
 /* .vitepress/theme/style/var.css */
 
+/* .vitepress/theme/style/var.css */
+:root {
+  /* 广大附中校徽配色 */
+  --cugfs-red: #9E2A2F;     /* 深红色 */
+  --cugfs-gold: #D4AF37;    /* 金色 */
+  
+  /* h1渐变色彩 */
+  --gradient-red: var(--cugfs-red);
+  --gradient-gold: var(--cugfs-gold);
+  --gradient-angle: 135deg;
+  
+  /* 动画参数 */
+  --gradient-animation-duration: 4s;
+  --gradient-animation-timing: ease-in-out;
+  
+  /* 文字大小与权重 */
+  --h1-font-size: 2.5rem;
+  --h1-font-weight: 700;
+}
+
+/* 深色模式适配 */
+.dark {
+  --gradient-red: #C84E54;    /* 浅一些的深红 */
+  --gradient-gold: #E5C878;   /* 柔和的金色 */
+  --gradient-angle: 135deg;
+}
+
+
 .medium-zoom-overlay {
   z-index: 30;
 }
