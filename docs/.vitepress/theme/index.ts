@@ -61,14 +61,3 @@ export default {
     app.component('mk', MK)
   }
 } satisfies Theme
-
-if (inBrowser) {
-      NProgress.configure({ showSpinner: false })
-      router.onBeforeRouteChange = () => {
-        NProgress.start() // 开始进度条
-      }
-      router.onAfterRouteChanged = () => {
-         busuanzi.fetch()
-         NProgress.done() // 停止进度条
-      }
-}
