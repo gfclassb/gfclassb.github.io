@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
-export const nav: DefaultTheme.Config['sidebar'] = [
+export const sidebar: DefaultTheme.Config['sidebar'] = [
   {
     text: '📷照册集',
     collapsed: true,
