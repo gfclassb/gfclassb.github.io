@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
   {
-    text: '📷照册集',
+    text: '📷照片集',
     collapsed: true,
     items: [
       {
