@@ -53,6 +53,7 @@ jobs:
           npm install vitepress-plugin-comment-with-giscus
           npm install markdown-it-task-checkbox --save
           npm install nprogress-v2
+          npm install vitepress-theme-teek -D
       - name: Build with VitePress
         run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact

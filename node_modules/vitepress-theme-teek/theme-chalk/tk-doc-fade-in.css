@@ -1,0 +1,1 @@
+.VPDoc .vp-doc>div{animation:slideInFade .7s ease-out forwards}@keyframes slideInFade{0%{opacity:0;transform:translateY(50px)}30%{animation-timing-function:ease-out}to{opacity:1;transform:translateY(0)}}

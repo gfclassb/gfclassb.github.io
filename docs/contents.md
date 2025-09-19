@@ -4,6 +4,15 @@ title: 目录索引
 description: 高一13班的专属知识库，收录课程资料、学习笔记、习题试卷等各类资源。
 editLink: false # 因为这个页面不需要用户编辑，所以关闭
 lastUpdated: true # 显示最后更新时间，增强时效性
+articleAnalyze:
+  showIcon: true
+  dateFormat: yyyy-MM-dd hh:mm:ss
+  showInfo: true
+  showAuthor: true
+  showCreateDate: true
+  showUpdateDate: false
+  showCategory: false
+  showTag: false
 ---
 
 #  📕目录索引页面

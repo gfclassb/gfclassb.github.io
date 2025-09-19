@@ -1,0 +1,1 @@
+:root{--tk-mark-color:#d63200}:root.dark{--tk-mark-color:#b160ea}.vp-doc mark{background-color:transparent;border:1px solid var(--tk-mark-color);border-radius:32px;color:var(--tk-mark-color);font-size:15px;margin:0 3px;padding:1px 8px}
